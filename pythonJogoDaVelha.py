@@ -45,6 +45,7 @@ def mudaJogador(jogador, jogada, tabuleiro):
         return "X"
 
 def verificaFimDeJogo(numJogadas, tabuleiro):
+    
     # Verificações das 3 verticais
     if tabuleiro[0] == tabuleiro [1] == tabuleiro[2]:
         if tabuleiro[0] == 1:
@@ -67,6 +68,7 @@ def verificaFimDeJogo(numJogadas, tabuleiro):
         elif tabuleiro[6] == 2:
             print("Jogador O ganhou")
             return 2
+        
     # Verificações das 3 horizontais          
     if tabuleiro[0] == tabuleiro[3] == tabuleiro[6]:
         if tabuleiro[0] == 1:
@@ -89,6 +91,7 @@ def verificaFimDeJogo(numJogadas, tabuleiro):
         elif tabuleiro[2] == 2:
             print("Jogador O ganhou")
             return 2
+        
     # Verificações das 2 diagonais    
     if tabuleiro[0] == tabuleiro[4] == tabuleiro[8]:
         if tabuleiro[0] == 1:
@@ -104,6 +107,7 @@ def verificaFimDeJogo(numJogadas, tabuleiro):
         elif tabuleiro[2] == 2:
             print("Jogador O ganhou")
             return 2
+        
     # Verificando empate    
     if numJogadas >= 9:
         print("Deu Velha")
@@ -122,6 +126,6 @@ while True:
         continue
     jogador = mudaJogador(jogador, jogada, tabuleiro)
     jogadas += 1
-    if verificaFimDeJogo(jogada, tabuleiro) != 0:
+    if verificaFimDeJogo(jogadas, tabuleiro) != 0:
         break
     
