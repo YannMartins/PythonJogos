@@ -1,11 +1,3 @@
-"""
-UNIESP Centro Universitário
-Curso: Análise e Desenvolvimento de Sistemas
-Projeto Integrador I 
-Discente: Yann Martins de Sousa
-Matrícula: 2023111590065
-"""
-
 from random import randint
 random = randint(1,100)
 
