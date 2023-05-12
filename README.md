@@ -5,11 +5,11 @@
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-## Descrição
+## 🌐 Descrição
 
-Arquivos de jogos básicos desenvolvidos na linguagem de programação Python, para as disciplinas de `Algoritmo e Linguagem de Programação` e `Projeto Integrador I`. 
+Arquivos de jogos básicos desenvolvidos na linguagem de programação Python, para as disciplinas de `Algoritmo e Linguagem de Programação` e `Projeto Integrador I`, no curso Análise e Desenvolvimento de Sistemas na UNIESP Centro Universitário.
 
-## Resultados:
+## 🏁 Resultados
 
 ### Jogo da Velha:
 
