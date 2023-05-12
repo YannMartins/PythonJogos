@@ -2,6 +2,7 @@ def novoTabuleiro():
     return [0, 0, 0, 
             0, 0, 0, 
             0, 0, 0]
+    
 
 def imprimirTabuleiro(tabuleiro):
     for indice, valor in enumerate(tabuleiro):
@@ -20,7 +21,8 @@ def imprimirTabuleiro(tabuleiro):
 
 def recebeJogada(jogador):
     try:
-        jogada = int(input("Digite a posição a jogar 1-9 (jogador %s):" % jogador))
+        jogada = int(input("Digite a posição a jogar 1-9 (jogador %s): " % jogador))
+        print("")
         return jogada
     except ValueError:
         print("Entrada invalida!")
@@ -49,67 +51,84 @@ def verificaFimDeJogo(numJogadas, tabuleiro):
     if tabuleiro[0] == tabuleiro [1] == tabuleiro[2]:
         if tabuleiro[0] == 1:
             print("Jogador X ganhou!")
+            print("")
             return 1
         elif tabuleiro [0] == 2:
             print("Jogador O ganhou!")
+            print("")
             return 2
     if tabuleiro[3] == tabuleiro[4] == tabuleiro[5]:
         if tabuleiro[3] == 1:
             print("Jogador X ganhou!")
+            print("")
             return 1
         elif tabuleiro[3] == 2:
             print("Jogador O ganhou!")
+            print("")
             return 2
     if tabuleiro[6] == tabuleiro[7] == tabuleiro[8]:
         if tabuleiro[6] == 1:
             print("Jogador X ganhou!")
+            print("")
             return 1
         elif tabuleiro[6] == 2:
             print("Jogador O ganhou!")
+            print("")
             return 2
         
     # Verificações das 3 horizontais          
     if tabuleiro[0] == tabuleiro[3] == tabuleiro[6]:
         if tabuleiro[0] == 1:
             print("Jogador X ganhou!")
+            print("")
             return 1
         elif tabuleiro[0] == 2:
             print("Jogador O ganhou!")
+            print("")
             return 2
     if tabuleiro[1] == tabuleiro[4] == tabuleiro[7]:
         if tabuleiro[1] == 1:
             print("Jogador X ganhou!")
+            print("")
             return 1
         elif tabuleiro[1] == 2:
             print("Jogador O ganhou!")
+            print("")
             return 2
     if tabuleiro[2] == tabuleiro[5] == tabuleiro[8]:
         if tabuleiro[2] == 1:
             print("Jogador X ganhou!")
+            print("")
             return 1
         elif tabuleiro[2] == 2:
             print("Jogador O ganhou!")
+            print("")
             return 2
         
     # Verificações das 2 diagonais    
     if tabuleiro[0] == tabuleiro[4] == tabuleiro[8]:
         if tabuleiro[0] == 1:
             print("Jogador X ganhou!")
+            print("")
             return 1
         elif tabuleiro[0] == 2:
             print("Jogador O ganhou!")
+            print("")
             return 2
     if tabuleiro[2] == tabuleiro[4] == tabuleiro[6]:
         if tabuleiro[2] == 1:
             print("Jogador X ganhou!")
+            print("")
             return 1
         elif tabuleiro[2] == 2:
             print("Jogador O ganhou!")
+            print("")
             return 2
         
     # Verificando empate    
     if numJogadas >= 9:
         print("Deu Velha!")
+        print("")
         return -1
     return 0
 
