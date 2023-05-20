@@ -6,9 +6,10 @@ print("Boas-vindas! Vamos jogar um jogo de adivinhação?")
 print("Adivinhe qual o número escolhido pelo computador entre 1 e 100 em 10 tentativas.")
 print("")
 
-tentativa = 0
+tentativa = 1
 
-while tentativa < 10:
+while tentativa < 11:
+    print("TENTATIVA {} DE 10" .format(tentativa))
     palpite = int(input('Insira o seu palpite: '))
     
     if palpite > random:
