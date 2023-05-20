@@ -17,4 +17,4 @@ Arquivos de jogos básicos desenvolvidos na linguagem de programação Python, p
 
 ### Jogo de Adivinhação:
 
-![Jogo de Adivinhação](https://github.com/YannMartins/pythonJogos/assets/102706324/1eccd51c-39db-48e8-91e5-af7df693e10b)
+![Jogo de Adivinhação](https://github.com/YannMartins/pythonJogos/assets/102706324/0f082440-a15a-42ed-8b34-b00f2cfeb137)
