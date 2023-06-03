@@ -1,30 +1,23 @@
 from random import randint
 random = randint(1,100)
 
-print("")
-print("Boas-vindas! Vamos jogar um jogo de adivinhação?")
-print("Adivinhe qual o número escolhido pelo computador entre 1 e 100 em 10 tentativas.")
-print("")
+print("\nBoas-vindas! Vamos jogar um jogo de adivinhação?")
+print("Adivinhe qual o número escolhido pelo computador entre 1 e 100 em 10 tentativas.\n")
 
 tentativa = 1
 
 while tentativa < 11:
-    print("TENTATIVA {} DE 10" .format(tentativa))
+    print(f"TENTATIVA {tentativa} DE 10")
     palpite = int(input('Insira o seu palpite: '))
     
     if palpite > random:
-        print("Você errou! Dica: seu palpite foi alto.")
-        print("")
+        print("Você errou! Dica: seu palpite foi alto.\n")
         tentativa += 1
     elif palpite < random:
-        print("Você errou! Dica: seu palpite foi baixo.")
-        print("")
+        print("Você errou! Dica: seu palpite foi baixo.\n")
         tentativa += 1
     else:
-        print("")
-        print("Parabéns, você acertou em cheio!")
-        print("")
+        print("\nParabéns, você acertou em cheio!\n")
         break;
 else:
-    print("Você atingiu o número máximo de tentativas! O palpite certo era: {}." .format (random))
-    print("")
+    print(f"Você atingiu o número máximo de tentativas! O palpite certo era: {random}.\n")
