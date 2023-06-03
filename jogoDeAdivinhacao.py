@@ -12,12 +12,12 @@ while tentativa < 11:
     
     if palpite > random:
         print("Você errou! Dica: seu palpite foi alto.\n")
-        tentativa += 1
     elif palpite < random:
-        print("Você errou! Dica: seu palpite foi baixo.\n")
-        tentativa += 1
+        print("Você errou! Dica: seu palpite foi baixo.\n")  
     else:
         print("\nParabéns, você acertou em cheio!\n")
-        break;
+        break
+    tentativa += 1
+    
 else:
     print(f"Você atingiu o número máximo de tentativas! O palpite certo era: {random}.\n")
